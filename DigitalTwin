@@ -84,3 +84,7 @@ def check_genesis_block(state):
         print("No valid elements:", no_valid_element)
         return False
     return True
+
+def update_pool_fees(fee):
+    if fee <= 1:
+        state["LP"]["AMM"]=fee
