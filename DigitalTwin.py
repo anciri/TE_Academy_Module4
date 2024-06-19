@@ -85,6 +85,6 @@ def check_genesis_block(state):
         return False
     return True
 
-def update_pool_fees(fee):
+def update_pool_fees(fee,state):
     if fee <= 1:
         state["LP"]["AMM"]=fee
